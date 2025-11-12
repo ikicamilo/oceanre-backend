@@ -12,7 +12,7 @@ RUN npm ci --only=production
 COPY . .
 
 # Expose port for AWS EB
-EXPOSE 8080
+EXPOSE 4000
 
 # Start the app
 CMD ["npm", "start"]

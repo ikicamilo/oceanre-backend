@@ -23,7 +23,7 @@ app.use('/api', routes);
 app.use(errorMiddleware);
 
 // Database connection and server start
-const PORT = process.env.PORT || 4000;
+const PORT = process.env.PORT || 8080;
 
 sequelize.authenticate()
   .then(() => {
