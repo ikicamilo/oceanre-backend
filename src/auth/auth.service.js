@@ -33,7 +33,7 @@ async function authenticate({ email, password }) {
   const match = await bcrypt.compare(password, user.password_hash);
   if (!match) throw new Error("Invalid credentials");
 
-  const payload = { id: user.id, email: user.email, role: user.role };
+  const payload = { id: user.id, name: user.name, email: user.email, role: user.role };
   const token = jwt.sign(payload, JWT_SECRET, { expiresIn: JWT_EXPIRES_IN });
 
   const safe = user.toJSON();
