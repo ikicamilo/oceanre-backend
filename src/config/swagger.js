@@ -12,7 +12,7 @@ const options = {
   definition: {
     openapi: "3.0.0",
     info: {
-      title: "OceanRe Accounting - Sales API",
+      title: "OceanRe Accounting - Sales API with CI/CD",
       version: "1.0.0",
       description: "Backend API documentation with JWT authentication.",
     },
